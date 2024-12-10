@@ -1,55 +1,66 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.main-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.profile-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 10px;
-}
-
-.profile-image img {
-    width: 100%;
+body, html {
     height: 100%;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+
+  }
+
+  .rectangle {
+    width: 70vw;
+    height: 70vh;
+    background-color: #f1d256;
+    border-radius: 20px; /* Adjust the radius as needed */
+    position: relative;
+    overflow: hidden; /* Ensures the image does not overflow the rectangle */
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+  .rectangle img {
+    width: auto;
+    height: 60%;
     object-fit: cover;
-}
-
-.about-me {
-    width: 600px;
-    margin: 10px;
-}
-
-h2 {
-    color: #333;
-}
-
-ul {
-    list-style-type: none;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+  }
+  .box{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 40%;
+    text-align: left;
+  }
+  .title {
+    color: black;
+    font-size: 4em;
+    font-weight: bold; /* Adjust the font size as needed */
+    margin-left: 0;
+  }
+  .list {
+    
+    color: black;
+    font-size: 1.5em;
+    font-weight: regular; /* Adjust the font size as needed */
+    margin-bottom: 30%;
+    margin-left: 0;
     padding: 0;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
+  }
+  .list li {
+    margin-bottom: 10px;
+    display: inline;
+    margin-right: 10px;
+  }
+  .email:before {
+    content: "\2709";
+  }
+  .email{
+    font-size: 1.5em;
+    margin-left: 40%;
+  }
